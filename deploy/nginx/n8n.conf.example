@@ -1,7 +1,7 @@
 # Site do n8n atrás do nginx da máquina. Troque N8N_HOST pelo domínio.
 # Instalação:
 #   sudo cp deploy/nginx/n8n.conf.example /etc/nginx/sites-available/n8n.conf
-#   sudo sed -i 's/N8N_HOST/n8n.seudominio.com.br/' /etc/nginx/sites-available/n8n.conf
+#   sudo sed -i -e "s/N8N_HOST/n8n.seudominio.com.br/" -e "s/SEU_IP/<seu IP público>/" /etc/nginx/sites-available/n8n.conf
 #   sudo ln -s /etc/nginx/sites-available/n8n.conf /etc/nginx/sites-enabled/
 #   sudo nginx -t && sudo systemctl reload nginx
 #   sudo certbot --nginx -d n8n.seudominio.com.br     # adiciona o HTTPS e o redirect
@@ -13,8 +13,9 @@ server {
     client_max_body_size 50m;
 
     location / {
-        # Liberação temporária: só o seu IP até criar o usuário dono no n8n.
-        # Depois de criar o dono, apague as duas linhas abaixo e recarregue o nginx.
+        # SÓ NA INSTALAÇÃO: no n8n, quem abre a página primeiro vira dono da instância.
+        # Troque SEU_IP pelo seu IP público, crie o usuário dono e depois apague
+        # estas duas linhas (allow/deny) e rode: sudo nginx -t && sudo systemctl reload nginx
         allow SEU_IP;
         deny all;
 
