@@ -167,3 +167,6 @@ These parts are **not** done yet:
 n8n is distributed under the *Sustainable Use License*. This repository is for installing n8n on the infrastructure of whoever will use it: yours or your client's. It is **not** for selling access to a shared instance. See the [n8n help center](https://support.n8n.io/article/can-i-use-your-license-for-my-use-case).
 
 Scripts and comments are in Portuguese.
+
+## Contact
+Ilmar · ilmar.tec@outlook.com

@@ -165,3 +165,6 @@ Isto é o que ainda **não** está feito:
 
 ## Licença do n8n
 O n8n usa a *Sustainable Use License*. Este repositório serve para instalar o n8n na infraestrutura de quem vai usá-lo, seja sua ou do seu cliente. Ele **não** serve para vender acesso a uma instância compartilhada. Detalhes na [central de ajuda do n8n](https://support.n8n.io/article/can-i-use-your-license-for-my-use-case).
+
+## Contato
+Ilmar · ilmar.tec@outlook.com
