@@ -1,0 +1,10 @@
+[Unit]
+Description=Backup diário do n8n às 03:30 (São Paulo)
+
+[Timer]
+OnCalendar=*-*-* 03:30:00 America/Sao_Paulo
+Persistent=true
+RandomizedDelaySec=5min
+
+[Install]
+WantedBy=timers.target
