@@ -84,7 +84,7 @@ sudo certbot --nginx -d n8n.seudominio.com.br
 sudo nginx -t && sudo systemctl reload nginx
 ```
 
-Depois de criar o dono, ative o 2FA da conta (*Settings → Personal*).
+Depois de criar o dono, ative o 2FA da conta em *Settings → Profile & preferences → Enable 2FA* e guarde os códigos de recuperação no gerenciador de senhas. É grátis. O que é pago é **obrigar** todos os usuários a usar 2FA (*Settings → Policies*).
 
 ### Backup
 ```bash

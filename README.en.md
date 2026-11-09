@@ -84,7 +84,7 @@ sudo certbot --nginx -d n8n.yourdomain.com
 sudo nginx -t && sudo systemctl reload nginx
 ```
 
-After creating the owner, turn on two-factor authentication for the account (*Settings → Personal*).
+After creating the owner, turn on two-factor authentication in *Settings → Profile & preferences → Enable 2FA* and keep the recovery codes in your password manager. This is free. What requires a paid plan is **enforcing** 2FA for all users (*Settings → Policies*).
 
 ### Backup
 ```bash
