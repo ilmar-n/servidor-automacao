@@ -3,3 +3,4 @@ data/
 backups/
 *.bak
 .env.backup
+.claude/
