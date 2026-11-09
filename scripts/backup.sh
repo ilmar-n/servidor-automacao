@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # Backup do servidor de automação: dump do Postgres + data/n8n + .env -> restic (R2).
-# Uso: scripts/backup.sh          (o timer systemd chama todo dia)
-#      scripts/backup.sh init     (cria o repositório restic, uma vez)
+# Uso: sudo scripts/backup.sh          (o timer systemd chama todo dia, como root)
+#      sudo scripts/backup.sh init     (cria o repositório restic, uma vez)
+# Precisa de root: data/n8n pertence ao uid 1000 (usuário do container do n8n).
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
